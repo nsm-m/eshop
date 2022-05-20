@@ -1,0 +1,95 @@
+/*caroussel */
+
+.most-loved-products {
+    width: 100%;
+    height: 5rem;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1rem;
+    font-family: PlayfairDisplay;
+    font-style: italic;
+
+
+}
+
+.most-loved-products {
+    width: 100%;
+    height: 5rem;
+    margin-top: 5rem;
+    text-align: center;
+
+}
+
+@media screen and (min-width:600px) {
+    .most-loved-products {
+        font-size: 3rem;
+
+    }
+}
+
+
+
+.carousel {
+    width: 100%;
+    padding-bottom: 20px;
+    /* height:500px;      */
+    align-content: center;
+    align-items: center;
+}
+
+.carousel-cell1 {
+    /* width: 30%; */
+    /* height: 500px; */
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+.carousel-cell2 {
+    /* width: 30%; */
+    /* height: 500px; */
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+.carousel-cell3 {
+    /* width: 30%; */
+    /* height: 500px; */
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.carousel-cell4 {
+    /* width: 30%; */
+    /* height: 500px; */
+    margin-right: 10px;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+    align-content: center;
+    align-items: center;
+    line-height: 600px;
+    font-size: 14px;
+    color: black;
+}

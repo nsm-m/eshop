@@ -1,0 +1,94 @@
+/* footer mobile logo */
+
+footer {
+    background: #242424;
+    color: white;
+    height: 9.5rem;
+    width: 100%;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    margin-top: 0.5rem;
+
+}
+
+
+.address {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.social {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.85rem;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:600px) {
+
+    footer li {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .social ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social a {
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width:600px) {
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-content: space-between;
+        margin-top: 0.5rem;
+
+    }
+
+    .address {
+        width: 50%;
+        text-align: left;
+        color: white;
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    .social {
+        width: 15%;
+        color: white;
+        margin-top: 0.5rem;
+        text-align: left;
+        font-size: 16px;
+        display: flex;
+    }
+
+
+}
+
+
+footer a {
+    color: white;
+}

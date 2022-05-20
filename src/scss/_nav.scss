@@ -1,0 +1,136 @@
+ /* Header for Mobile */
+ /* @media screen and (max-width:600px){ */
+
+ #shop[tabindex="-1"]:focus {
+     outline: 0;
+
+ }
+
+
+
+ header {
+
+
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     width: 100%;
+     height: 5rem;
+ }
+
+
+ .logo {
+     background-image: url(/images/aloha-logo.svg);
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: top left;
+     align-items: left;
+     justify-items: left;
+     height: 30px;
+     width: 50%;
+     order: 1;
+ }
+
+
+ .cart {
+     background-image: url(/images/cart-icon.svg);
+     background-size: contain;
+     background-position: top right;
+     height: 30px;
+     width: 50%;
+     align-items: right;
+     align-content: right;
+     background-repeat: no-repeat;
+     order: 2;
+ }
+
+
+ .top-navigation-links {
+
+     border-top: 0.15rem solid #d7d7d7;
+     list-style: none;
+     margin-top: 0.3rem;
+     text-align: center;
+     order: 3;
+     width: 100%;
+     height: 3rem;
+
+ }
+
+ .top-navigation-links li {
+     display: inline;
+
+ }
+
+ .top-navigation-links a {
+     display: inline-block;
+     /* margin-top: 5px; */
+     padding: 0.25rem;
+     margin-top: 0.5rem;
+     color: #e2574c;
+     text-transform: uppercase;
+     font-size: 1rem;
+     text-decoration: none;
+     font-family: Raleway;
+     font-style: bold;
+ }
+
+
+
+
+ @media screen and (min-width:600px) {
+
+     header {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         flex-direction: row;
+         width: 100%;
+         height: 5rem;
+     }
+
+     .logo {
+         background-image: url(/images/aloha-logo.svg);
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-position: top left;
+         order: 1;
+         height: 7rem;
+         width: 7rem;
+     }
+
+     .cart {
+         background-image: url(/images/cart-icon.svg);
+         background-size: contain;
+         height: 50px;
+         width: 15%;
+         border-right: 20px;
+         background-repeat: no-repeat;
+         background-position: top right;
+         order: 3;
+     }
+
+     .top-navigation-links {
+         border-top: none;
+         list-style: none;
+         margin-top: 0.3rem;
+         text-align: center;
+         order: 2;
+         height: 3rem;
+         width: auto;
+     }
+
+     .top-navigation-links li {
+         display: inline;
+
+     }
+
+     .top-navigation-links a {
+         display: inline-block;
+         margin-top: 25px;
+         padding: 10px;
+         color: #e2574c;
+         font-size: 16px;
+     }
+
+ }
