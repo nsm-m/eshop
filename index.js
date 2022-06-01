@@ -26,14 +26,8 @@ $(document).ready(function (e) {
         }
     }
 
-    $('.carousel').flickity({
-        // options
-        wrapAround: true,
-        cellAlign: 'left',
-        contain: true,
-        freeScroll: true,
-        autoPlay: 2500
-    });
-
+    $('.carousel').carousel({
+        //interval: false,
+    })
 
 });

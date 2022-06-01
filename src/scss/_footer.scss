@@ -1,94 +1,148 @@
-/* footer mobile logo */
+/* footer mobile */
 
 footer {
+    display: flex;
+    flex-wrap: wrap;
     background: #242424;
     color: white;
-    height: 9.5rem;
     width: 100%;
+    justify-content: center;
+}
+
+.address,
+.contact,
+.social,
+.copyright {
+    display: flex;
+    width: 90%;
+    margin: 2%;
+    padding: 2%;
 }
 
 .contact {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-top: 0.5rem;
-
 }
+
 
 
 .address {
-    width: 100%;
-    text-align: center;
-    margin-top: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        align-items: center;
+    }
+}
+
+.address a,
+.social a {
+    color: white;
 }
 
 .social {
-    width: 100%;
-    text-align: center;
-    margin-top: 0.85rem;
-    justify-content: center;
-}
-
-
-@media screen and (max-width:600px) {
-
-    footer li {
+    ul {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-    .social ul {
-        display: flex;
-        justify-content: center;
-    }
-
-    .social a {
-        visibility: hidden;
-    }
-}
-
-
-
-
-
-
-@media screen and (min-width:600px) {
-    .contact {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
         width: 100%;
         justify-content: space-between;
-        align-content: space-between;
-        margin-top: 0.5rem;
 
+        span {
+            display: none;
+        }
+
+    }
+}
+
+
+.copyright {
+    align-items: center;
+    flex-direction: column;
+}
+
+
+//footer large phones and tablets
+@media (min-width:480px) {
+
+
+    .contact {
+        flex-direction: row;
+        width: 100%
+    }
+
+    .social,
+    .address {
+
+        width: 40%;
     }
 
     .address {
-        width: 50%;
-        text-align: left;
-        color: white;
-        margin-top: 0.5rem;
-        margin-left: 1rem;
+        justify-content: center;
+
+        a,
+        p {
+            text-align: center;
+            width: 90%;
+            margin: 2%;
+            padding: 2%;
+        }
     }
 
     .social {
-        width: 15%;
-        color: white;
-        margin-top: 0.5rem;
-        text-align: left;
-        font-size: 16px;
-        display: flex;
+        ul {
+            flex-direction: column;
+            align-items: flex-start;
+
+            li {
+                width: 90%;
+                margin: 2%;
+                padding: 2%;
+                display: flex;
+
+                a {
+                    text-decoration: none;
+                    width: 100%
+                }
+
+                .fab {
+                    font-size: 1.5em;
+                }
+            }
+
+            span {
+                display: revert;
+                margin-left: 2%;
+            }
+        }
     }
-
-
 }
 
+// tablet and desktop
+@media (min-width:810px) {
+    .contact {
+        justify-content: space-evenly;
+    }
 
-footer a {
-    color: white;
+    .copyright {
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social,
+    .address {
+        min-width: 25%;
+        width: 25%;
+    }
+
+    .address,
+    .address a,
+    .address p,
+    .contact,
+    .copyright,
+    .social,
+    .social ul li {
+        margin: 1%;
+        padding: 1%;
+    }
 }

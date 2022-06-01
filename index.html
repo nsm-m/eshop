@@ -3,151 +3,267 @@
 <html lang="en">
 
 <head>
+
   <title> Aloha Apparel Co.</title>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/public/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="/fonts-all/fonts.css">
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" media="screen">
-  <link rel="stylesheet" href="/fontawesome/web-fonts-with-css/css/fontawesome-all.min.css">
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-  <!-- <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> -->
-  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+  <link rel="stylesheet" href="/public/css/styles.css">
 
 </head>
 
 <body>
-  <a class="screen-reader-text" href="#shop"> Skip to shopping </a>
-
   <header>
 
-    <div class="logo"> </div>
+    <nav class="navbar bg-light fixed-top">
 
-    <div class="cart"></div>
+      <a class="screen-reader-text" href="#shop"> Skip to shopping </a>
 
-    <div class="top-navigation-links">
-      <ul>
-        <li> <a href="#About-Aloha"> About </a> </li>
-        <li> <a href="#Shop"> Shop </a></li>
-        <li> <a href="#Featured"> Featured </a> </li>
-        <li> <a href="#Updates"> Updates </a></li>
-      </ul>
-    </div>
+      <div class="logo">
+        <img src="images/aloha-logo.svg">
+        <a class="navbar-brand" href="#"></a>
+      </div>
 
+      <div class="menu-cart">
+
+        <div class="menu-cart-wrapper">
+
+          <div class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample">
+            <img src="images/menu.svg">
+          </div>
+
+          <div class="cart">
+            <img src="images/cart-icon.svg">
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Aloha Apparel</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="dropdown mt-3">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Featured</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Updates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </nav>
   </header>
 
-  <div class="banner">
 
-    <div class="new-collection">
+  <section class="new-section">
+    <div class="banner">
+      <img src="images/flower-bkgd.jpg" id="bkg">
+      <img src="images/banner-girl.png" id="girl">
 
-      <p> New Collection</p>
-      <br>
-      <h1>Spring/Summer 2017</h1>
+      <div class="new-collection">
 
-    </div> <!-- new-collection -->
-
-  </div> <!-- banner-->
-
-
-
-  <div class="about">
-
-    <p id="about-aloha">
-    <h2>Hand-Crafted Styles</h2>
-    <br>
-    <p> Aloha Apparel Co. sells only the finest ready-to-travel clothing.</p>
-    <p> Browse our current selection of products or sign-up for updates below.</p>
-    </p>
-  </div>
-
-
-  <br>
-
-  <div class="shop" id="shop" tabindex="-1">
-    <div class="men-category">
-      Men's
-    </div>
-
-    <div class="trends-category">
-      Trends
-    </div>
-
-    <div class="glasses-category">
-      Glasses
-    </div>
-
-    <div class="sales-category">
-      Sales
-    </div>
-
-    <div class="bags-category">
-      bags
-    </div>
-
-    <div class="womens-category">
-      womens
-    </div>
-
-  </div> <!-- shop -->
-
-
-
-
-  <div class="most-loved-products">
-    <p id="Featured">
-    <h2> Most-Loved Products </h2>
-    </p>
-  </div><!-- most-loved-products-->
-
-
-  <div class="carousel">
-
-    <div class="carousel-cell1">
-      <img src="images/checked-stretch-dress.jpg" alt="checked stretch dress">
-      <p>DRESSES
-      <p>
+        <p> New Collection</p>
         <br>
-      <p>Checked Stretch Dress</p>
-      <br>
-      <p>$129.00</p>
+        <h1>Spring/Summer 2017</h1>
+
+      </div> <!-- new-collection -->
+
+    </div> <!-- banner-->
+  </section> <!-- new-section -->
+
+  <section class="about-section">
+    <div class="about">
+
+      <p id="about-aloha">
+      <h2>Hand-Crafted Styles</h2>
+
+      <p> Aloha Apparel Co. sells only the finest ready-to-travel clothing.</p>
+      <p> Browse our current selection of products or sign-up for updates below.</p>
+
     </div>
 
-    <div class="carousel-cell2">
-      <img src="images/blue-hipster-backpack.jpg" alt="Backpack">
-      <p>BAGS</p>
-      <br>
-      <p>Blue Hipster Backpack</p>
-      <br>
-      <p>$69.00</p>
-    </div>
+  </section>
 
-    <div class="carousel-cell3">
-      <img src="images/demin-overall-shorts.jpg" alt="shorts">
-      <p>DENIM </p>
-      <br>
-      <p>Denim Overall Shorts</p>
-      <br>
-      <p>$89.00</p>
-    </div>
+  <div class="shop-wrapper">
+    <div class="shop" id="shop" tabindex="-1">
+      <div class="men-category">
+        <img src="/images/mens-category.jpg">
+        <div class="cat">
+          <p>Men's</p>
+        </div>
+      </div>
+      <!-- <div class="test-wrapper1"> -->
+      <div class="trends-category">
+        <img src="/images/trends-category.jpg">
+        <div class="cat">
+          <p>Trends</p>
+        </div>
 
-    <div class="carousel-cell4">
-      <img src="images/pink-dotted-dress.jpg" alt="pink dotted dress">
-      <p>DRESSES</p>
-      <br>
-      <p>Pink Dotted Dress</p>
-      <br>
-      <p>$99.00</p>
-    </div>
+      </div>
 
-  </div>
-  <!--caroussel -->
+      <div class="glasses-category">
+        <img src="/images/glasses-category.jpg">
+        <div class="cat">
+          <p>Glasses</p>
+        </div>
+      </div>
+
+      <!-- </div> -->
+
+      <!-- <div class="test-wrapper2"> -->
+      <div class="sales-category">
+        <img src="/images/sale-category.jpg">
+        <div class="cat">
+          <p>Sales</p>
+        </div>
+      </div>
+
+      <div class="bags-category">
+        <img src="/images/bags-category.jpg">
+        <div class="cat">
+          <p>bags</p>
+        </div>
+      </div>
+      <!-- </div> -->
+
+      <div class="womens-category">
+        <img src="/images/womens-category.jpg">
+        <div class="cat">
+          <p>womens</p>
+        </div>
+      </div>
+
+    </div> <!-- shop -->
+  </div><!-- shop-wrapper -->
+
+  <section class="caroussel-section">
+
+    <div class="most-loved-products">
+      <p id="Featured">
+      <h2> Most-Loved Products </h2>
+      </p>
+
+      <div id="carouseProducts" class="carousel slide" data-bs-interval="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouseProducts" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouseProducts" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouseProducts" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouseProducts" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouseProducts" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouseProducts" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouseProducts" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouseProducts" data-bs-slide-to="7" aria-label="Slide 8"></button>
+
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/checked-stretch-dress.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p>DRESSES</p>
+              <p>Checked Stretch Dress</p>
+              <p>$129.00</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/blue-hipster-backpack.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p>BAGS</p>
+              <p>Blue Hipster Backpack</p>
+              <p>$69.00</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/demin-overall-shorts.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p>DENIM </p>
+              <p>Denim Overall Shorts</p>
+              <p>$89.00</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/blue-silk-dress.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p>DRESSES</p>
+              <p>Blue Silk Dress</p>
+              <p>$100.00</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/pink-dotted-dress.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p>DRESSES</p>
+              <p>Pink Dotted Dress</p>
+              <p>$99.00</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/cotton-blue-shirt.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Shirts</p>
+              <p>Cotton Denim Shirt</p>
+              <p>$79.00</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/cotton-yellow-tshirt.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p>Shirts</p>
+              <p>Cotton Shirt</p>
+              <p>$49.00</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/stretch-knit-dress.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <p>DRESSES</p>
+              <p>Stretch knit Dress</p>
+              <p>$120.00</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouseProducts" data-bs-slide="prev">
+          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+          <i class="fa-solid fa-angle-left"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouseProducts" data-bs-slide="next">
+          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+          <i class="fa-solid fa-angle-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    </div><!-- most-loved-products-->
+
+  </section>
+
 
   <div class="sign-up">
     <p id="Updates"></p>
@@ -177,36 +293,60 @@
   <footer>
 
     <div class="contact">
+      <div class="social">
 
+        <ul>
+          <li> <a href=facebook><i class="fa-brands fa-facebook-square fa-fw"></i><span>Facebook</span></a></li>
+          <li> <a href=google+><i class="fa-brands fa-google-plus-square fa-fw"></i><span>Google+</span></a></li>
+          <li> <a href=instagram><i class="fa-brands fa-instagram fa-fw"></i><span>Instagram</span></a></li>
+          <li> <a href=pinterest><i class="fa-brands fa-pinterest-square fa-fw"></i><span>Pinterest</span></a> </li>
+          <li> <a href=twitter><i class="fa-brands fa-twitter-square fa-fw"></i><span>Twitter</span></a></li>
+
+
+
+        </ul>
+
+      </div>
       <div class="address">
-        <p>2006 Aloha Apparel.co </p>
-        <p>Powered by html and css</p>
-        <p>604-604-6040 <a href="mailto:info@alohaapparel.com">info@alohaapparel.com </a> </p>
+        <p>604-604-6040 </p>
+        <a href="mailto:info@alohaapparel.com">info@alohaapparel.com </a>
         <p>1490 W Broadway</p>
         <p>Vancouver, BC, Canada </p>
       </div>
 
 
 
-
-      <div class="social">
-
-        <ul>
-          <li> <i class="fab fa-facebook-f"></i> <a href=Facebook> Facebook </a> </li>
-          <li> <i class="fab fa-twitter"></i> <a href=Twitter> Twitter </a> </li>
-          <li> <i class="fab fa-instagram"></i> <a href=instagram> Instagram</a> </li>
-          <li> <i class="fab fa-pinterest-square"></i> <a href=Pinterest> Pinterest</a> </li>
-          <li> <i class="fab fa-google-plus-g"></i> <a href=Google+> Google+</a> </li>
-        </ul>
-
-      </div>
-
-
     </div>
     <!--contact -->
-
+    <div class="copyright">
+      <p>2006 Aloha Apparel.co </p>
+      <p>Powered by html and css</p>
+    </div>
 
   </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script> -->
+  <script src="https://kit.fontawesome.com/bd2e7b7818.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script> -->
+
+
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
 
 
 

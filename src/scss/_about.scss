@@ -1,23 +1,31 @@
-.about {
-
+.about-section {
     display: flex;
-    display: block;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.about {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%;
-    height: 50%;
+    width: 90%;
     line-height: 2rem;
+    margin: 2%;
+    padding: 2%;
 
-
+    h2 {
+        font-family: PlayfairDisplay;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1rem;
+        margin: 2%
+    }
 }
 
-.about h2 {
-    font-family: PlayfairDisplay;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 1rem;
-}
+
 
 .About p {
     font-family: Raleway-Italic;
@@ -43,19 +51,19 @@
     /* above all content */
 }
 
-@media screen and (min-width:600px) {
-    .about h2 {
-        font-family: PlayfairDisplay;
-        font-style: italic;
-        font-weight: bold;
-        font-size: 2rem;
-    }
+// @media screen and (min-width:600px) {
+//     .about h2 {
+//         font-family: PlayfairDisplay;
+//         font-style: italic;
+//         font-weight: bold;
+//         font-size: 2rem;
+//     }
 
-    .about p {
-        font-family: Raleway-Italic;
-        font-size: 1rem;
-    }
+//     .about p {
+//         font-family: Raleway-Italic;
+//         font-size: 1rem;
+//     }
 
 
 
-}
+// }
