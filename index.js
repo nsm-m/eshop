@@ -43,13 +43,13 @@ $(document).ready(function (e) {
         // options
         cellAlign: 'left',
         contain: true,
-      //  setGallerySize: false,
+        //  setGallerySize: false,
         imagesLoaded: true
     });
 
     $(document).ready(function () {
         $('.hotels-slider').slick({
-           // setting- name: setting - value
+            // setting- name: setting - value
 
             dots: true,
             infinite: false,
@@ -84,7 +84,7 @@ $(document).ready(function (e) {
                 // settings: "unslick"
                 // instead of a settings object
             ]
-           
+
         });
     });
 

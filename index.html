@@ -26,63 +26,65 @@
 
   <header class="sticky-header">
 
+    <!-- <nav class="navbar fixed-top"> -->
     <nav class="navbar fixed-top">
+      <div class="container-fluid">
+        <a class="screen-reader-text" href="#shop"> Skip to shopping </a>
 
-      <a class="screen-reader-text" href="#shop"> Skip to shopping </a>
+        <div class="logo">
+          <img src="images/logo/logo_white_large.png">
+          <a class="navbar-brand" href="#"></a>
+        </div>
 
-      <div class="logo">
-        <img src="images/logo/logo_white_large.png">
-        <a class="navbar-brand" href="#"></a>
-      </div>
+        <div class="menu-cart">
 
-      <div class="menu-cart">
+          <div class="menu-cart-wrapper">
 
-        <div class="menu-cart-wrapper">
+            <div class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample">
+              <i class="fa-solid fa-bars"></i>
+            </div>
 
-          <div class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-            aria-controls="offcanvasExample">
-            <img src="images/menu.svg">
-          </div>
+            <div class="cart">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
 
-          <div class="cart">
-            <img src="images/cart-icon.svg">
           </div>
 
         </div>
 
-      </div>
-
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Aloha Apparel</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <div class="dropdown mt-3">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Featured</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Updates</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Aloha Apparel</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="dropdown mt-3">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Featured</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Updates</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-
     </nav>
   </header>
   <!---->
@@ -175,6 +177,34 @@
     </div> <!-- banner-->
   </section> <!-- new-section -->
 
+  <section class="search-section">
+    <form class="search-form">
+
+      <div class="search container-fluid">
+
+        <div class="search-input col-12">
+          <label for="search-destinations" class="form-label">Destination</label>
+          <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+        </div>
+
+
+        <div class="date-wrapper row">
+          <div class="col-6 col-sm-5 col-md-4">
+            <label for="startDate">Check in</label>
+            <input id="startDate" class="form-control" type="date" />
+          </div>
+          <div class="col-6 col-sm-5 col-md-4">
+            <label for="endDate">Check Out</label>
+            <input id="endDate" class="form-control" type="date" />
+          </div>
+          <button type="submit" class="submitBtn btn btn-primary col-2">Submit</button>
+        </div>
+
+      </div>
+    </form>
+  </section>
+  <!---->
+
   <section class="travel-categories">
     <div class="travel-categories-wrapper">
 
@@ -184,7 +214,7 @@
       </div>
       <div class="categories ">
         <div class="row g-2">
-          <div class="col-3">
+          <div class="col-5 col-sm-3 col-md-2 col-lg-1">
             <div class="card mb-3">
               <img src="images/adventure.svg" class="card-img-top" alt="...">
               <div class="card-body d-none d-sm-block">
@@ -192,7 +222,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-5 col-sm-3 col-md-2 col-lg-1">
             <div class="card mb-3">
               <img src="images/beach.svg" class="card-img-top" alt="...">
               <div class="card-body d-none d-sm-block">
@@ -200,7 +230,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-5 col-sm-3 col-md-2 col-lg-1">
             <div class="card mb-3">
               <img src="images/camping.svg" class="card-img-top" alt="...">
               <div class="card-body d-none d-sm-block">
@@ -208,7 +238,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-5 col-sm-3 col-md-2 col-lg-1">
             <div class="card mb-3">
               <img src="images/city.svg" class="card-img-top" alt="...">
               <div class="card-body d-none d-sm-block">
@@ -231,33 +261,7 @@
   </section>
 
 
-  <section class="search-section">
-    <form class="search-form">
 
-      <div class="search container-fluid">
-
-        <div class="search-input col-12">
-          <label for="search-destinations" class="form-label">Destination</label>
-          <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
-        </div>
-
-
-        <div class="date-wrapper row">
-          <div class="col-6 col-sm-5 col-md-4">
-            <label for="startDate">Check in</label>
-            <input id="startDate" class="form-control" type="date" />
-          </div>
-          <div class="col-6 col-sm-5 col-md-4">
-            <label for="endDate">Check Out</label>
-            <input id="endDate" class="form-control" type="date" />
-          </div>
-        </div>
-
-        <button type="submit" class="submitBtn btn btn-primary">Submit</button>
-      </div>
-    </form>
-  </section>
-  <!---->
 
   <section class="hotel-carousel">
 
@@ -500,9 +504,6 @@
   <!---->
 
 
-
-
-
   <section class="shop-section">
     <div class="shop-wrapper">
 
@@ -562,12 +563,13 @@
 
     <div class="sign-up-image-background">
 
+
       <div class="sign-up-form">
 
         <h2> Sign-Up for Updates </h2>
 
-        <p> Stay updated on our lastest products realeases, be first to find out about upcoming sales,
-          and get free style tips from our blog. Unsubscribe at any time. </p>
+        <p> Stay updated on our lastest offers, be first to find out about upcoming sales,
+          and get free travel tips from our blog. Unsubscribe at any time. </p>
 
 
         <form action="#" method="post">
@@ -576,10 +578,9 @@
         </form>
 
 
-      </div><!-- sign up form-->
-
+      </div>
+      <!-- sign up form-->
     </div> <!-- sign-up-image-background-->
-
   </section>
   <!--sign-up -->
 
@@ -610,8 +611,8 @@
     </div>
     <!--contact -->
     <div class="copyright">
-      <p>2006 Aloha Apparel.co </p>
-      <p>Powered by html and css</p>
+      <p>2022 Wandero Sample </p>
+      <p>Powered by html, css, bootstrap and JavaScript</p>
     </div>
     <!--copyright-->
 

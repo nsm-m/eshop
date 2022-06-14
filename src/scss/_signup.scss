@@ -17,32 +17,30 @@
     margin: 3%;
     padding: 2%;
     text-align: center;
-    width: 80%;
-}
+    width: 70%;
 
-.sign-up-form h2 {
+    h2 {
 
-    text-align: center;
-    line-height: 2rem;
-    margin-top: -0.5rem;
-    color: white;
-    font-family: Playfair;
-    font-size: 1.5rem;
-    font-style: italic;
-}
+        text-align: center;
+        line-height: 2rem;
+        margin-top: -0.5rem;
+        color: $darkblue;
+        font-family: Playfair;
+        font-size: 1.5rem;
+        font-style: italic;
+    }
 
-.sign-up-form p {
-    line-height: 1.5rem;
-    color: white;
-    font-family: Raleway;
-}
+    p {
+        line-height: 1.5rem;
+        color: $darkblue;
+        font-family: Raleway;
+    }
 
-.sign-up {
 
     form {
         display: flex;
         justify-content: end;
-        min-width: 90%;
+        width: 70%;
         position: relative;
         // min-height: 1rem;
         // min-width: 200px;
@@ -54,12 +52,10 @@
     }
 
     input[type="email"] {
-        border: 0px;
+        border: 1px solif $darkblue;
 
         width: 100%;
-        // padding: 0px;
 
-        //  min-height: 1.5rem;
 
         width: 100%;
         padding: 0px 0px 0px 10%;
@@ -68,7 +64,8 @@
     }
 
     input::placeholder {
-        color: #e2574c;
+        color: $darkblue;
+        ;
         font-size: 0.8em;
         font-style: italic;
         padding: 0px;
@@ -80,10 +77,10 @@
 
     button[type="submit"] {
         font-size: 0.8em;
-        background: #e2574c;
+        background: $darkblue;
         border: 0px;
         position: absolute;
-        color: white;
+        color: $yellow;
         align-self: center;
         height: 100%;
 
@@ -92,7 +89,7 @@
 
 
 .sign-up-image-background {
-    background-image: url(/images/wave-bkgd.jpg);
+   // background: url('/images/hotelbkgd.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -106,117 +103,27 @@
 
 }
 
-// /* tablet only */
-// @media only screen and (max-width: 1240px) and (min-width: 600px) {
-
-
-//     .sign-up {
-//         margin-top: 2.5rem;
-//     }
-
-//     .form {
-//         flex-direction: row;
-//         width: 15rem;
-//         margin-top: 1.5rem;
-//         display: inline-flex;
-//     }
-
-//     .sign-up p {
-//         color: white;
-//         font-family: Raleway;
-//         font-size: 1rem;
-//         margin-top: 1rem;
-//     }
-
-//     .sign-up h2 {
-//         font-family: PlayfairDisplay;
-//         font-size: 2rem;
-//         font-style: italic;
-//         color: white;
-//     }
-// }
-
 
 
 // /* sign-up for desktop min width:1240px   */
-// @media screen and (min-width:1240px) {
-//     .sign-up {
-//         /* height:30rem; */
-//         width: 100%;
-//         display: flex;
-//         flex-direction: row;
-//         flex-wrap: wrap;
-//         padding-top: 5rem;
+@media (min-width:576px) {
+    .sign-up-form {
+        width: 70%;
 
+        form {
+            width: 50%;
+        }
+    }
 
-//     }
+}
 
+@media (min-width:940px) {
+    .sign-up-form {
+        width: 50%;
 
-//     .sign-up-form {
-//         display: flex;
-//         text-align: center;
-//         display: flex;
-//         text-align: center;
-//         flex-wrap: wrap;
-//         justify-content: center;
-//     }
+        form {
+            width: 50%;
+        }
+    }
 
-//     .sign-up-form h2 {
-
-//         text-align: center;
-//         line-height: 2.5rem;
-//         color: white;
-//         font-family: PlayfairDisplay;
-//         font-size: 2rem;
-//     }
-
-//     .sign-up-form p {
-//         margin-left: 15rem;
-//         margin-right: 15rem;
-//         line-height: 2.25rem;
-//         color: white;
-//         font-family: Raleway;
-//     }
-
-
-//     form {
-//         display: flex;
-//         flex-direction: row;
-//         width: 20rem;
-//     }
-
-//     input[type="email"] {
-//         border-radius: 1.5rem;
-//         flex-grow: 2;
-//         border: 0px;
-//     }
-
-//     button[type="submit"] {
-//         border-radius: 1rem;
-//         background: #e2574c;
-//         border: 0px;
-//         width: 6rem;
-//         height: 2.25rem;
-//         margin-left: -6.45rem;
-//         margin-top: 0.5rem;
-//         margin-bottom: 0.5rem;
-//         color: white;
-//         font-size: 16px;
-
-//     }
-
-//     .sign-up-image-background {
-//         background-image: url(/images/wave-bkgd.jpg);
-//         background-size: cover;
-//         background-repeat: no-repeat;
-//         background-position: bottom center;
-//         width: 100%;
-//         display: flex;
-//         flex-wrap: wrap;
-//         align-items: center;
-//         text-align: center;
-//         justify-content: center;
-
-//     }
-
-// }
+}

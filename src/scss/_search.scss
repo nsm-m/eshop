@@ -41,7 +41,29 @@
 
 @media (min-width: 576px) {
 
+    .search-section{
+        padding:1%;
+    }
     .date-wrapper {
         justify-content: center;
+        padding: 1%;
+
+
     }
+
+    .search-form {
+        border-radius: 1%;
+        margin: 1%;
+        padding: 1%;
+
+        button[type=submit] {
+            margin: 1%;
+            padding: 1%;
+        }
+    }
+
+    .search-input {
+        padding: 1%;
+    }
+
 }

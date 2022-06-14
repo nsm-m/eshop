@@ -1,12 +1,31 @@
 .travel-categories {
-    background: url('/images/travelbkgd.svg');
-    background-size: cover;
+    // background: url('/images/travelbkgd.svg');
+    //  background-size: cover;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 
     position: relative;
+
+    .row {
+        justify-content: center;
+    }
+
+    .card {
+
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        border: 1px solid $darkblue;
+        background-color: transparent;
+
+        .card-body {
+            padding: 1%;
+            text-align: center;
+        }
+    }
+
 
 }
 
@@ -19,14 +38,6 @@
     z-index: 1;
 }
 
-.card {
-
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    border: 1px solid $darkblue;
-    background-color: transparent;
-}
 
 
 
@@ -60,9 +71,19 @@
 }
 
 /** For mobile devices **/
-@media (max-width: 767px) {
-    .custom-shape-divider-bottom-1655159955 svg {
-        width: calc(100% + 1.3px);
-        height: 36px;
+@media (min-width: 767px) {
+    .travel-categories-title {
+        display: flex;
+        width: 100%;
+        height: auto;
+        color: $darkblue;
+        margin: 1% 1% 2% 0%;
+        padding: 1% 1% 2% 0%;
     }
+
+    .row {
+        justify-content: flex-start;
+    }
+
+
 }
