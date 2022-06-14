@@ -17,6 +17,7 @@
     padding: 2%;
 
     h2 {
+        animation: slide-in-left 3s ease-in-out both;
         font-family: PlayfairDisplay;
         font-style: italic;
         font-weight: bold;
@@ -27,9 +28,24 @@
 
 
 
-.About p {
+
+
+.about p {
     font-family: Raleway-Italic;
     font-size: 0.875rem;
+    animation: slide-in-left 3s ease-in-out both;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .screen-reader-text {

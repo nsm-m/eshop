@@ -1,36 +1,85 @@
-/*caroussel */
-
-.caroussel-section {
+.hotel-carousel {
+    background: url('/images/hotelbkgd.svg');
+    background-size: cover;
     display: flex;
-    justify-content: center;
-}
 
-.most-loved-products {
-    width: 90%;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5%;
-    padding: 5%;
-}
-
-.carousel {
     width: 100%;
-    height: 100%;
 }
 
-.carousel-indicators {
-    margin-bottom: -1rem;
+.main-carousel {
+    display: none;
 }
 
-.carousel-indicators [data-bs-target] {
-    background-color: black
+.flickity-enabled {
+    display: unset;
 }
 
-.fa-solid {
-    color: black;
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 2%;
+    padding: 3%;
 }
 
-.carousel-caption {
-    color: black;
+.flickity-page-dots {
+    bottom: 0px;
+
+    .dot {
+        opacity: 1;
+        background: lightgrey;
+    }
+
+    .is-selected {
+        background: white;
+    }
+
+}
+
+.carousel-cell {
+    width: 195px;
+    // /* half-width */
+    height: 195px;
+    margin-right: 10px;
+}
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 15, 0.3);
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    margin: 1%;
+    padding: 3%;
+}
+
+
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+@media (min-width:400px) {
+    .carousel-cell {
+        width: 200px;
+        // /* half-width */
+        height: 200px;
+
+    }
+}
+
+@media (min-width:600px) {
+    .carousel-cell {
+        width: 250px;
+        // /* half-width */
+        height: 250px;
+        // margin-right: 10px;
+    }
 }

@@ -1,0 +1,47 @@
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    background-image: url('/images/search.svg');
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    margin: 2%;
+    padding: 2%;
+    border: 1px solid $darkblue;
+    border-radius: 3%;
+    background-color: white;
+
+    button[type=submit] {
+        height: auto;
+        margin: 2%;
+        padding: 2%;
+        background-color: $darkblue;
+        color: $yellow;
+        ;
+
+    }
+
+}
+
+.date-wrapper,
+.search-input {
+
+    padding: 3%;
+
+    label {
+        color: $darkblue;
+    }
+}
+
+@media (min-width: 576px) {
+
+    .date-wrapper {
+        justify-content: center;
+    }
+}

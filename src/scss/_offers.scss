@@ -1,0 +1,47 @@
+.current-offers {
+    display: flex;
+    background: url('/images/offersbkgd2.svg');
+    width: 100%;
+    background-size: cover;
+    justify-content: center;
+
+    .hotel {
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        align-items: flex-start;
+
+        p {
+            place-self: flex-end;
+        }
+
+    }
+}
+
+.current-offers-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 2%;
+    padding: 2%;
+
+
+    .card {
+        border: none;
+        margin: 1%;
+        padding: 1%;
+        background-color: transparent;
+        border: none;
+    }
+
+}
+
+.current-offers-title {
+    display: flex;
+    margin: 1%;
+    padding: 1%;
+    color: $darkblue;
+    text-transform: capitalize;
+}

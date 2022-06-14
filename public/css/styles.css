@@ -108,7 +108,7 @@ section {
 
 body {
   line-height: 1;
-  background-color: #FFF7F8;
+  background-color: transparent;
 }
 
 ol,
@@ -148,11 +148,19 @@ table {
 }
 
 header {
+  z-index: 1;
+  background-color: #0A014F;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
   justify-content: center;
+}
+
+.sticky-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
@@ -209,6 +217,25 @@ header {
 }
 
 /* banner for mobile  */
+html {
+  height: auto;
+  background-size: cover;
+  background-color: white;
+}
+
+.carousel-item.active {
+  display: flex;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.offcanvas {
+  display: none;
+}
+
 .new-section {
   display: flex;
   width: 100%;
@@ -218,6 +245,7 @@ header {
   display: flex;
   align-items: center;
   width: 100%;
+  background-position: bottom;
   justify-content: center;
 }
 .banner #bkg {
@@ -258,6 +286,53 @@ img:nth-child(2) {
   color: white;
 }
 
+@media (min-width: 600px) {
+  .new-section {
+    display: flex;
+    width: 100%;
+  }
+}
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  background-image: url("/images/search.svg");
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  margin: 2%;
+  padding: 2%;
+  border: 1px solid #0A014F;
+  border-radius: 3%;
+  background-color: white;
+}
+.search-form button[type=submit] {
+  height: auto;
+  margin: 2%;
+  padding: 2%;
+  background-color: #0A014F;
+  color: #E0BE36;
+}
+
+.date-wrapper,
+.search-input {
+  padding: 3%;
+}
+.date-wrapper label,
+.search-input label {
+  color: #0A014F;
+}
+
+@media (min-width: 576px) {
+  .date-wrapper {
+    justify-content: center;
+  }
+}
 .about-section {
   display: flex;
   width: 100%;
@@ -276,6 +351,7 @@ img:nth-child(2) {
   padding: 2%;
 }
 .about h2 {
+  animation: slide-in-left 3s ease-in-out both;
   font-family: PlayfairDisplay;
   font-style: italic;
   font-weight: bold;
@@ -283,11 +359,22 @@ img:nth-child(2) {
   margin: 2%;
 }
 
-.About p {
+.about p {
   font-family: Raleway-Italic;
   font-size: 0.875rem;
+  animation: slide-in-left 3s ease-in-out both;
 }
 
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -307,13 +394,121 @@ img:nth-child(2) {
   /* above all content */
 }
 
+.travel-categories {
+  background: url("/images/travelbkgd.svg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.travel-categories-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  z-index: 1;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  border: 1px solid #0A014F;
+  background-color: transparent;
+}
+
+.travel-categories-title {
+  display: flex;
+  width: 100%;
+  height: auto;
+  color: #0A014F;
+  margin: 2% 2% 3% 0%;
+  padding: 2% 2% 3% 0%;
+}
+
+.custom-shape-divider-bottom-1655159955 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1655159955 svg {
+  position: relative;
+  display: block;
+  width: calc(122% + 1.3px);
+  height: 13px;
+}
+
+.custom-shape-divider-bottom-1655159955 .shape-fill {
+  fill: #0A014F;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1655159955 svg {
+    width: calc(100% + 1.3px);
+    height: 36px;
+  }
+}
+.current-offers {
+  display: flex;
+  background: url("/images/offersbkgd2.svg");
+  width: 100%;
+  background-size: cover;
+  justify-content: center;
+}
+.current-offers .hotel {
+  color: #FCF7FF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.current-offers .hotel p {
+  place-self: flex-end;
+}
+
+.current-offers-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 2%;
+  padding: 2%;
+}
+.current-offers-wrapper .card {
+  border: none;
+  margin: 1%;
+  padding: 1%;
+  background-color: transparent;
+  border: none;
+}
+
+.current-offers-title {
+  display: flex;
+  margin: 1%;
+  padding: 1%;
+  color: #0A014F;
+  text-transform: capitalize;
+}
+
 img {
   width: 100%;
   height: auto;
 }
 
+.shop-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .shop {
   display: grid;
+  width: 100%;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
   grid-template-rows: auto;
 }
@@ -324,8 +519,20 @@ img {
 .trends-category,
 .glasses-category,
 .sales-category,
+.bags-category,
+.men-category,
+.womens-category {
+  position: relative;
+}
+
+.trends-category,
+.glasses-category,
+.sales-category,
 .bags-category {
   display: flex;
+  border: 1px solid white;
+  justify-content: center;
+  align-items: center;
 }
 .trends-category img,
 .glasses-category img,
@@ -338,6 +545,9 @@ img {
 .womens-category {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  border: 1px solid white;
+  align-items: center;
   grid-column-start: 1;
   grid-column-end: 5;
 }
@@ -378,44 +588,124 @@ img {
 
 .cat {
   position: absolute;
-}
-
-/*caroussel */
-.caroussel-section {
+  background-color: rgba(0, 0, 15, 0.3);
+  color: white;
+  text-transform: uppercase;
+  margin: 1%;
+  padding: 3%;
+  border-radius: 2%;
   display: flex;
+  width: 100%;
+  height: 100%;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.most-loved-products {
-  width: 90%;
+@media (min-width: 600px) {
+  .men-category,
+.womens-category {
+    grid-column-end: 3;
+  }
+
+  .trends-category,
+.glasses-category {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .trends-category,
+.sales-category {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .glasses-category,
+.bags-category {
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+  .womens-category,
+.bags-category,
+.sales-category {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+.hotel-carousel {
+  background: url("/images/hotelbkgd.svg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5%;
-  padding: 5%;
-}
-
-.carousel {
   width: 100%;
-  height: 100%;
 }
 
-.carousel-indicators {
-  margin-bottom: -1rem;
+.main-carousel {
+  display: none;
 }
 
-.carousel-indicators [data-bs-target] {
-  background-color: black;
+.flickity-enabled {
+  display: unset;
 }
 
-.fa-solid {
-  color: black;
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 2%;
+  padding: 3%;
 }
 
-.carousel-caption {
-  color: black;
+.flickity-page-dots {
+  bottom: 0px;
+}
+.flickity-page-dots .dot {
+  opacity: 1;
+  background: lightgrey;
+}
+.flickity-page-dots .is-selected {
+  background: white;
 }
 
+.carousel-cell {
+  width: 195px;
+  height: 195px;
+  margin-right: 10px;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 15, 0.3);
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  margin: 1%;
+  padding: 3%;
+}
+
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (min-width: 400px) {
+  .carousel-cell {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (min-width: 600px) {
+  .carousel-cell {
+    width: 250px;
+    height: 250px;
+  }
+}
 /* for mobile  */
 .sign-up {
   display: flex;
@@ -452,35 +742,31 @@ img {
   font-family: Raleway;
 }
 
-form {
+.sign-up form {
   display: flex;
   justify-content: end;
   min-width: 90%;
   position: relative;
 }
-
-button[type=submit],
-input[type=email] {
+.sign-up button[type=submit],
+.sign-up input[type=email] {
   border-radius: 1rem;
 }
-
-input[type=email] {
+.sign-up input[type=email] {
   border: 0px;
   width: 100%;
   width: 100%;
   padding: 0px 0px 0px 10%;
   box-sizing: border-box;
 }
-
-input::placeholder {
+.sign-up input::placeholder {
   color: #e2574c;
   font-size: 0.8em;
   font-style: italic;
   padding: 0px;
   margin: 0px;
 }
-
-button[type=submit] {
+.sign-up button[type=submit] {
   font-size: 0.8em;
   background: #e2574c;
   border: 0px;
@@ -508,7 +794,7 @@ button[type=submit] {
 footer {
   display: flex;
   flex-wrap: wrap;
-  background: #242424;
+  background: #0A014F;
   color: white;
   width: 100%;
   justify-content: center;
