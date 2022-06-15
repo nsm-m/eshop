@@ -1,0 +1,143 @@
+.travel-categories-title,
+.carousel-text,
+.current-offers-title,
+.sign-up-form>h2,
+.shop-title {
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin: 2% 2% 3% 0%;
+    padding: 2% 2% 3% 0%;
+    color: $darkblue;
+    display: flex;
+
+}
+
+.carousel-caption>h5 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 4em;
+    margin-bottom: 5%;
+}
+
+label {
+    font-family: 'Anton', sans-serif;
+}
+
+.cat,
+.card-title {
+    font-family: 'Righteous', cursive;
+    font-size: 1em;
+    letter-spacing: 3px;
+}
+
+.card-text,
+.sign-up-form>p,
+.social,
+.address,
+.copyright {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1em;
+
+}
+
+.carousel-caption>p {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1em;
+}
+
+
+.categories {
+    .card-title {
+
+        font-size: 0.8em;
+
+    }
+}
+
+
+@media (min-width:576px) {
+    .carousel-caption>h5 {
+
+        font-size: 5em;
+        margin-bottom: 4%;
+    }
+
+    .carousel-caption>p {
+        font-size: 2em;
+    }
+
+
+    .travel-categories-title,
+    .carousel-text,
+    .current-offers-title,
+    .sign-up-form>h2,
+    .shop-title {
+        font-size: 1.5em;
+
+
+    }
+
+    .cat,
+    .card-title {
+
+        font-size: 1.2em;
+
+    }
+
+    .categories {
+        .card-title {
+
+            font-size: 1em;
+
+        }
+    }
+
+    .card-text,
+    .sign-up-form>p,
+    .social,
+    .address,
+    .copyright {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 1em;
+
+    }
+}
+
+@media (min-width:900px) {
+    .carousel-caption>h5 {
+
+        font-size: 9em;
+        margin-bottom: 4%;
+    }
+
+    .carousel-caption>p {
+        font-size: 4em;
+    }
+
+    .travel-categories-title,
+    .carousel-text,
+    .current-offers-title,
+    .sign-up-form>h2,
+    .shop-title {
+        font-size: 2.5em;
+
+
+    }
+
+    .cat,
+    .card-title {
+
+        font-size: 1.2em;
+
+    }
+
+    .carousel .card-text,
+    .sign-up-form>p,
+    .social,
+    .address,
+    .copyright {
+
+        font-size: 2em;
+
+    }
+}

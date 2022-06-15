@@ -25,15 +25,12 @@
         line-height: 2rem;
         margin-top: -0.5rem;
         color: $darkblue;
-        font-family: Playfair;
-        font-size: 1.5rem;
-        font-style: italic;
     }
 
     p {
-        line-height: 1.5rem;
+        line-height: 2rem;
         color: $darkblue;
-        font-family: Raleway;
+
     }
 
 
@@ -42,6 +39,7 @@
         justify-content: end;
         width: 70%;
         position: relative;
+        margin-top: 5%;
         // min-height: 1rem;
         // min-width: 200px;
     }
@@ -89,7 +87,7 @@
 
 
 .sign-up-image-background {
-   // background: url('/images/hotelbkgd.svg');
+    // background: url('/images/hotelbkgd.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -115,6 +113,10 @@
         }
     }
 
+    .sign-up-form>p {
+        line-height: 2.5rem;
+
+    }
 }
 
 @media (min-width:940px) {

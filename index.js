@@ -35,7 +35,7 @@ $(document).ready(function (e) {
     //  carousel();
     var myCarousel = document.querySelector('#banner-caroussel')
     var carousel = new bootstrap.Carousel(myCarousel, {
-        interval: 2000,
+        interval: 5000,
         wrap: false
     })
 
@@ -43,6 +43,7 @@ $(document).ready(function (e) {
         // options
         cellAlign: 'left',
         contain: true,
+        autoPlay: 5000,
         //  setGallerySize: false,
         imagesLoaded: true
     });

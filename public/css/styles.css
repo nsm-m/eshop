@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Anton&family=Fjalla+One&family=Righteous&display=swap");
 html,
 body,
 div,
@@ -132,6 +133,130 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.travel-categories-title,
+.carousel-text,
+.current-offers-title,
+.sign-up-form > h2,
+.shop-title {
+  font-family: "Abril Fatface", cursive;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin: 2% 2% 3% 0%;
+  padding: 2% 2% 3% 0%;
+  color: #0A014F;
+  display: flex;
+}
+
+.carousel-caption > h5 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 4em;
+  margin-bottom: 5%;
+}
+
+label {
+  font-family: "Anton", sans-serif;
+}
+
+.cat,
+.card-title {
+  font-family: "Righteous", cursive;
+  font-size: 1em;
+  letter-spacing: 3px;
+}
+
+.card-text,
+.sign-up-form > p,
+.social,
+.address,
+.copyright {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1em;
+}
+
+.carousel-caption > p {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1em;
+}
+
+.categories .card-title {
+  font-size: 0.8em;
+}
+
+@media (min-width: 576px) {
+  .carousel-caption > h5 {
+    font-size: 5em;
+    margin-bottom: 4%;
+  }
+
+  .carousel-caption > p {
+    font-size: 2em;
+  }
+
+  .travel-categories-title,
+.carousel-text,
+.current-offers-title,
+.sign-up-form > h2,
+.shop-title {
+    font-size: 1.5em;
+  }
+
+  .cat,
+.card-title {
+    font-size: 1.2em;
+  }
+
+  .categories .card-title {
+    font-size: 1em;
+  }
+
+  .card-text,
+.sign-up-form > p,
+.social,
+.address,
+.copyright {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 1em;
+  }
+}
+@media (min-width: 900px) {
+  .carousel-caption > h5 {
+    font-size: 9em;
+    margin-bottom: 4%;
+  }
+
+  .carousel-caption > p {
+    font-size: 4em;
+  }
+
+  .travel-categories-title,
+.carousel-text,
+.current-offers-title,
+.sign-up-form > h2,
+.shop-title {
+    font-size: 2.5em;
+  }
+
+  .cat,
+.card-title {
+    font-size: 1.2em;
+  }
+
+  .carousel .card-text,
+.sign-up-form > p,
+.social,
+.address,
+.copyright {
+    font-size: 2em;
+  }
+}
+.travel-categories-wrapper,
+.carousel-wrapper,
+.current-offers-wrapper,
+.shop-wrapper {
+  margin: 2%;
+  padding: 2%;
 }
 
 /* Header for Mobile */
@@ -381,6 +506,7 @@ img:nth-child(2) {
     border-radius: 1%;
     margin: 1%;
     padding: 1%;
+    width: 60%;
   }
   .search-form button[type=submit] {
     margin: 1%;
@@ -389,6 +515,11 @@ img:nth-child(2) {
 
   .search-input {
     padding: 1%;
+  }
+}
+@media (min-width: 900px) {
+  .search-form {
+    width: 50%;
   }
 }
 .about-section {
@@ -482,12 +613,13 @@ img:nth-child(2) {
 }
 
 .travel-categories-title {
+  font-family: "Abril Fatface", cursive;
+  text-transform: uppercase;
+  font-size: 1em;
   display: flex;
   width: 100%;
   height: auto;
   color: #0A014F;
-  margin: 2% 2% 3% 0%;
-  padding: 2% 2% 3% 0%;
 }
 
 .custom-shape-divider-bottom-1655159955 {
@@ -557,14 +689,12 @@ img:nth-child(2) {
   border: none;
 }
 
-.current-offers-title {
-  display: flex;
-  margin: 1%;
-  padding: 1%;
-  color: #0A014F;
-  text-transform: capitalize;
+@media (min-width: 900px) {
+  .current-offers-wrapper {
+    margin: 1%;
+    padding: 1%;
+  }
 }
-
 img {
   width: 100%;
   height: auto;
@@ -573,10 +703,13 @@ img {
 .shop-section {
   display: flex;
   justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .shop-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 90%;
 }
@@ -715,6 +848,12 @@ img {
   align-items: center;
   width: 100%;
 }
+.hotel-carousel .card {
+  border: none;
+}
+.hotel-carousel .card img {
+  border-radius: 3%;
+}
 
 .main-carousel {
   display: none;
@@ -753,7 +892,6 @@ img {
 .content-card {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 15, 0.3);
   border-radius: 5px;
   width: 100%;
   display: flex;
@@ -780,6 +918,12 @@ img {
     height: 250px;
   }
 }
+@media (min-width: 900px) {
+  .carousel-wrapper {
+    margin: 1%;
+    padding: 1%;
+  }
+}
 /* for mobile  */
 .sign-up {
   display: flex;
@@ -804,20 +948,17 @@ img {
   line-height: 2rem;
   margin-top: -0.5rem;
   color: #0A014F;
-  font-family: Playfair;
-  font-size: 1.5rem;
-  font-style: italic;
 }
 .sign-up-form p {
-  line-height: 1.5rem;
+  line-height: 2rem;
   color: #0A014F;
-  font-family: Raleway;
 }
 .sign-up-form form {
   display: flex;
   justify-content: end;
   width: 70%;
   position: relative;
+  margin-top: 5%;
 }
 .sign-up-form button[type=submit],
 .sign-up-form input[type=email] {
@@ -866,6 +1007,10 @@ img {
   }
   .sign-up-form form {
     width: 50%;
+  }
+
+  .sign-up-form > p {
+    line-height: 2.5rem;
   }
 }
 @media (min-width: 940px) {

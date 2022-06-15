@@ -1,12 +1,23 @@
 .hotel-carousel {
-   // background: url('/images/hotelbkgd.svg');
+    // background: url('/images/hotelbkgd.svg');
     background-size: cover;
     display: flex;
 
     flex-direction: column;
     align-items: center;
     width: 100%;
+
+    .card {
+        border: none;
+
+        img {
+
+            border-radius: 3%;
+        }
+    }
 }
+
+
 
 .main-carousel {
     display: none;
@@ -49,7 +60,7 @@
 .content-card {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 15, 0.3);
+    //  background-color: rgba(0, 0, 15, 0.3);
     border-radius: 5px;
     width: 100%;
     display: flex;
@@ -81,5 +92,14 @@
         // /* half-width */
         height: 250px;
         // margin-right: 10px;
+    }
+}
+
+
+@media (min-width:900px) {
+    .carousel-wrapper {
+
+        margin: 1%;
+        padding: 1%;
     }
 }

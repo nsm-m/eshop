@@ -1,6 +1,6 @@
 .current-offers {
     display: flex;
-   // background: url('/images/offersbkgd2.svg');
+    // background: url('/images/offersbkgd2.svg');
     width: 100%;
     background-size: cover;
     justify-content: center;
@@ -38,10 +38,12 @@
 
 }
 
-.current-offers-title {
-    display: flex;
-    margin: 1%;
-    padding: 1%;
-    color: $darkblue;
-    text-transform: capitalize;
+
+
+@media (min-width:900px) {
+
+    .current-offers-wrapper {
+        margin: 1%;
+        padding: 1%;
+    }
 }
