@@ -189,11 +189,9 @@ label {
     font-size: 5em;
     margin-bottom: 4%;
   }
-
   .carousel-caption > p {
     font-size: 2em;
   }
-
   .travel-categories-title,
 .carousel-text,
 .current-offers-title,
@@ -201,16 +199,13 @@ label {
 .shop-title {
     font-size: 1.5em;
   }
-
   .cat,
 .card-title {
     font-size: 1.2em;
   }
-
   .categories .card-title {
     font-size: 1em;
   }
-
   .card-text,
 .sign-up-form > p,
 .social,
@@ -225,11 +220,9 @@ label {
     font-size: 9em;
     margin-bottom: 4%;
   }
-
   .carousel-caption > p {
     font-size: 4em;
   }
-
   .travel-categories-title,
 .carousel-text,
 .current-offers-title,
@@ -237,12 +230,10 @@ label {
 .shop-title {
     font-size: 2.5em;
   }
-
   .cat,
 .card-title {
     font-size: 1.2em;
   }
-
   .carousel .card-text,
 .sign-up-form > p,
 .social,
@@ -347,7 +338,6 @@ header {
   .logo {
     width: 30%;
   }
-
   .fa-solid {
     font-size: 1.2em;
   }
@@ -356,11 +346,9 @@ header {
   .logo {
     width: 20%;
   }
-
   .menu-cart {
     width: 20%;
   }
-
   .fa-solid {
     font-size: 1.5em;
   }
@@ -370,12 +358,10 @@ header {
     margin: 0.5%;
     padding: 0.5%;
   }
-
   .logo,
 .menu-cart {
     width: 10%;
   }
-
   .fa-solid {
     font-size: 2em;
   }
@@ -461,7 +447,7 @@ img:nth-child(2) {
   flex-direction: column;
   align-items: center;
   padding: 2%;
-  background-image: url("/images/search.svg");
+  background-image: url("./images/search.svg");
 }
 
 .search-form {
@@ -496,12 +482,10 @@ img:nth-child(2) {
   .search-section {
     padding: 1%;
   }
-
   .date-wrapper {
     justify-content: center;
     padding: 1%;
   }
-
   .search-form {
     border-radius: 1%;
     margin: 1%;
@@ -512,7 +496,6 @@ img:nth-child(2) {
     margin: 1%;
     padding: 1%;
   }
-
   .search-input {
     padding: 1%;
   }
@@ -652,7 +635,6 @@ img:nth-child(2) {
     margin: 1% 1% 2% 0%;
     padding: 1% 1% 2% 0%;
   }
-
   .row {
     justify-content: flex-start;
   }
@@ -815,25 +797,21 @@ img {
 .womens-category {
     grid-column-end: 3;
   }
-
   .trends-category,
 .glasses-category {
     grid-row-start: 1;
     grid-row-end: 2;
   }
-
   .trends-category,
 .sales-category {
     grid-column-start: 3;
     grid-column-end: 4;
   }
-
   .glasses-category,
 .bags-category {
     grid-column-start: 4;
     grid-column-end: 5;
   }
-
   .womens-category,
 .bags-category,
 .sales-category {
@@ -1008,7 +986,6 @@ img {
   .sign-up-form form {
     width: 50%;
   }
-
   .sign-up-form > p {
     line-height: 2.5rem;
   }
@@ -1079,12 +1056,10 @@ footer {
     flex-direction: row;
     width: 100%;
   }
-
   .social,
 .address {
     width: 40%;
   }
-
   .address {
     justify-content: center;
   }
@@ -1095,7 +1070,6 @@ footer {
     margin: 2%;
     padding: 2%;
   }
-
   .social ul {
     flex-direction: column;
     align-items: flex-start;
@@ -1122,19 +1096,16 @@ footer {
   .contact {
     justify-content: space-evenly;
   }
-
   .copyright {
     align-items: center;
     flex-direction: column;
     justify-content: center;
   }
-
   .social,
 .address {
     min-width: 25%;
     width: 25%;
   }
-
   .address,
 .address a,
 .address p,
