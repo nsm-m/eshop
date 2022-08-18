@@ -447,7 +447,7 @@ img:nth-child(2) {
   flex-direction: column;
   align-items: center;
   padding: 2%;
-  background-image: url("./images/search.svg");
+  background-color: #0A014F;
 }
 
 .search-form {
@@ -457,9 +457,9 @@ img:nth-child(2) {
   width: 90%;
   margin: 2%;
   padding: 2%;
+  background-color: #E0BE36;
   border: 1px solid #0A014F;
   border-radius: 3%;
-  background-color: white;
 }
 .search-form button[type=submit] {
   height: auto;
