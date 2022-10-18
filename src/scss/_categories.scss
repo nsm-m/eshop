@@ -32,19 +32,19 @@ img {
 
 
 
-.trends-category,
-.glasses-category,
-.sales-category,
-.bags-category,
-.men-category,
-.womens-category {
+.africa-category,
+.europe-category,
+.northamerica-category,
+.southamerica-category,
+.asia-category,
+.oz-category {
     position: relative;
 }
 
-.trends-category,
-.glasses-category,
-.sales-category,
-.bags-category {
+.africa-category,
+.europe-category,
+.northamerica-category,
+.southamerica-category {
     display: flex;
     border: 1px solid white;
     justify-content: center;
@@ -55,8 +55,9 @@ img {
     }
 }
 
-.men-category,
-.womens-category {
+
+.asia-category,
+.oz-category {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,39 +67,39 @@ img {
     grid-column-end: 5;
 }
 
-.men-category {
+.asia-category {
     grid-row-start: 1;
     grid-row-end: 2;
-}
+} 
 
-.trends-category,
-.glasses-category {
+.africa-category,
+.europe-category {
     grid-row-start: 2;
     grid-row-end: 3;
 }
 
-.sales-category,
-.bags-category {
+.northamerica-category,
+.southamerica-category {
     grid-row-start: 3;
     grid-row-end: 4;
 }
 
 
-.womens-category {
+.oz-category {
     grid-row-start: 4;
     grid-row-end: 5;
 }
 
 
-.trends-category,
-.sales-category {
+.africa-category,
+.northamerica-category {
     grid-column-start: 1;
     grid-column-end: 3;
 
 }
 
-.glasses-category,
-.bags-category {
+.europe-category,
+.southamerica-category {
     grid-column-start: 3;
     grid-column-end: 5;
 }
@@ -128,33 +129,33 @@ img {
 
 @media (min-width:600px) {
 
-    .men-category,
-    .womens-category {
+    .asia-category,
+    .oz-category {
         grid-column-end: 3;
     }
 
 
-    .trends-category,
-    .glasses-category {
+    .africa-category,
+    .europe-category {
         grid-row-start: 1;
         grid-row-end: 2;
     }
 
-    .trends-category,
-    .sales-category {
+    .africa-category,
+    .northamerica-category {
         grid-column-start: 3;
         grid-column-end: 4;
     }
 
-    .glasses-category,
-    .bags-category {
+    .europe-category,
+    .southamerica-category {
         grid-column-start: 4;
         grid-column-end: 5;
     }
 
-    .womens-category,
-    .bags-category,
-    .sales-category {
+    .oz-category,
+    .southamerica-category,
+    .northamerica-category {
         grid-row-start: 2;
         grid-row-end: 3;
     }

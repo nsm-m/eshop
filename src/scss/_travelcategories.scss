@@ -20,6 +20,10 @@
         border: 1px solid $darkblue;
         background-color: transparent;
 
+        .card-img-top {
+            height:100%;
+                }
+
         .card-body {
             padding: 1%;
             text-align: center;
@@ -29,10 +33,10 @@
 
 }
 
-.cat-col{
-    display:flex;
-} 
-   
+.cat-col {
+    display: flex;
+}
+
 
 
 
