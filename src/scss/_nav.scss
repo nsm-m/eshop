@@ -93,6 +93,12 @@
      position: static
  }
 
+
+
+ .navbar-toggler {
+     visibility: hidden;
+ }
+
  @media screen and (min-width:460px) {
      .logo {
          width: 30%;
@@ -128,6 +134,10 @@
 
      .fa-solid {
          font-size: 1.5em;
+     }
+
+     .navbar-toggler {
+         visibility: visible;
      }
 
  }

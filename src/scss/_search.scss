@@ -27,7 +27,9 @@
         background-color: $darkblue;
         color: $yellow;
         ;
-
+        display: flex;
+        width: 25%;
+        justify-content: center;
     }
 
 }

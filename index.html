@@ -40,8 +40,9 @@
 
           <div class="menu-cart-wrapper">
 
-            <div class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-              aria-controls="offcanvasExample">
+            <div class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasMenu"
+              aria-controls="offcanvas" >
               <i class="fa-solid fa-bars"></i>
             </div>
 
@@ -53,10 +54,10 @@
 
         </div>
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu"
           aria-labelledby="offcanvasExampleLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Aloha Apparel</h5>
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Wandero Travel</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
@@ -66,20 +67,24 @@
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#search">Search</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Shop</a>
+                  <a class="nav-link" href="#categories">Categories</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Featured</a>
+                  <a class="nav-link" href="#hotelPicks">Hotel Picks</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Updates</a>
+                  <a class="nav-link" href="#offers">Current Offers</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#destinations">Destinations</a>
+                 </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                  </li>
+   
               </ul>
             </div>
           </div>
@@ -177,14 +182,14 @@
     </div> <!-- banner-->
   </section> <!-- new-section -->
 
-  <section class="search-section">
+  <section class="search-section" id="search">
     <form class="search-form">
 
       <div class="search container-fluid">
 
         <div class="search-input col-12">
           <label for="search-destinations" class="form-label">Destination</label>
-          <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+          <input class="form-control" type="text" placeholder="Enter a destination" aria-label="default input example">
         </div>
 
 
@@ -205,7 +210,7 @@
   </section>
   <!---->
 
-  <section class="travel-categories">
+  <section class="travel-categories" id="categories">
     <div class="travel-categories-wrapper">
 
 
@@ -214,7 +219,7 @@
       </div>
       <div class="categories ">
         <div class="row g-2">
-          <div class="col-5 col-sm-3 col-md-2">
+          <div class="cat-col col-5 col-sm-3 col-md-2">
             <div class="card mb-3">
               <img src="images/adventure.svg" class="card-img-top" alt="...">
               <div class="card-body d-none d-sm-block">
@@ -222,7 +227,7 @@
               </div>
             </div>
           </div>
-          <div class="col-5 col-sm-3 col-md-2">
+          <div class="cat-col col-5 col-sm-3 col-md-2">
             <div class="card mb-3">
               <img src="images/beach.svg" class="card-img-top" alt="...">
               <div class="card-body d-none d-sm-block">
@@ -230,7 +235,7 @@
               </div>
             </div>
           </div>
-          <div class="col-5 col-sm-3 col-md-2">
+          <div class="cat-col col-5 col-sm-3 col-md-2">
             <div class="card mb-3">
               <img src="images/camping.svg" class="card-img-top" alt="...">
               <div class="card-body d-none d-sm-block">
@@ -238,7 +243,7 @@
               </div>
             </div>
           </div>
-          <div class="col-5 col-sm-3 col-md-2">
+          <div class="cat-col col-5 col-sm-3 col-md-2">
             <div class="card mb-3">
               <img src="images/city.svg" class="card-img-top" alt="...">
               <div class="card-body d-none d-sm-block">
@@ -257,7 +262,7 @@
 
 
 
-  <section class="hotel-carousel">
+  <section class="hotel-carousel" id="hotelPicks">
 
     <div class="carousel-wrapper">
 
@@ -378,7 +383,7 @@
 
             <div class="card-img-overlay">
               <span class="content-card">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Emerald Hotel & Spa</h5>
                 <p class="card-text"> From</p>
                 <p class="card-text"> 607$/night</p>
               </span>
@@ -447,7 +452,7 @@
 
 
 
-  <section class="current-offers">
+  <section class="current-offers" id="offers">
     <div class="current-offers-wrapper container-fluid">
       <div class="current-offers-title">
         <h1>current offers</h1>
@@ -498,7 +503,7 @@
   <!---->
 
 
-  <section class="shop-section">
+  <section class="shop-section" id="destinations">
     <div class="shop-wrapper">
       <div class="shop-title">
         <p>Browse by Destination</p>
@@ -584,7 +589,7 @@
 
   <footer>
 
-    <div class="contact">
+    <div class="contact" id="contact">
 
       <div class="social">
         <ul>
